@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#183c31" />
+    <meta name="description" content="Shop cow ghee, buffalo ghee and whole wheat flour (atta). Place your order directly on WhatsApp." />
+    <title>Desi Ghee Haryana | Pure pantry essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">Freshly packed pantry essentials <span>•</span> Delivered with care</div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Desi Ghee Haryana home">
+        <img class="brand-mark" src="main_logo.jpeg" alt="" />
+        <span>Desi Ghee Haryana<small>PURE PANTRY GOODS</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#shop">Shop</a>
+        <a href="#about">Our promise</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cart" href="#cart"><span aria-hidden="true">Bag</span><span class="cart-count" id="header-count">0</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> GOOD FOOD STARTS HERE</p>
+          <h1 id="hero-title">The good stuff,<br /><em>straight to your home.</em></h1>
+          <p class="hero-description">Honest ghee and everyday whole wheat flour, packed fresh and ready for your family table.</p>
+          <a class="button button-light" href="#shop">Shop pantry essentials <span aria-hidden="true">↓</span></a>
+          <div class="hero-note"><span class="note-stamp" aria-hidden="true">100%</span><span>Simple ingredients.<br />Everyday goodness.</span></div>
+        </div>
+        <div class="hero-image" role="img" aria-label="A jar of ghee with a wooden spoon">
+          <div class="image-caption"><span>MADE FOR THE EVERYDAY</span></div>
+        </div>
+      </section>
+
+      <section class="shop-section" id="shop">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow eyebrow-dark"><span></span> THE PANTRY EDIT</p>
+            <h2>Stock up on <em>goodness.</em></h2>
+          </div>
+          <p class="section-intro">Choose your size, add it to your bag, and send your order straight to us on WhatsApp.</p>
+        </div>
+
+        <div class="shop-layout">
+          <div class="catalogue">
+            <div class="category-tabs" role="tablist" aria-label="Product categories">
+              <button class="category-tab is-active" type="button" role="tab" aria-selected="true" data-category="all">All products <span>15</span></button>
+              <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="cow">Cow Ghee</button>
+              <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="buffalo">Buffalo Ghee</button>
+              <button class="category-tab" type="button" role="tab" aria-selected="false" data-category="atta">Whole Wheat Flour (Atta)</button>
+            </div>
+            <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          </div>
+
+          <aside class="cart-panel" id="cart" aria-labelledby="cart-heading">
+            <div class="cart-heading-row"><div><p class="eyebrow eyebrow-dark">YOUR SELECTION</p><h2 id="cart-heading">Your bag <span id="cart-item-count">(0)</span></h2></div><span class="bag-icon" aria-hidden="true">+</span></div>
+            <div class="cart-items" id="cart-items" aria-live="polite"></div>
+            <div class="cart-empty" id="cart-empty"><span class="empty-mark" aria-hidden="true">+</span><p>Your bag is waiting.</p><span>Add something good from the pantry.</span></div>
+            <div class="cart-breakdown">
+              <div class="cost-row"><span>Subtotal</span><strong id="cart-total">Rs. 0</strong></div>
+              <div class="cost-row"><span>Delivery charges <small>(minimum)</small></span><strong id="delivery-charge">Rs. 0</strong></div>
+              <div class="cost-row cost-total"><span>Estimated total <small>(minimum)</small></span><strong id="cart-grand-total">Rs. 0</strong></div>
+            </div>
+            <p class="delivery-note" id="delivery-note">Delivery charge is calculated from your order subtotal.</p>
+            <form class="checkout-form" id="checkout-form">
+              <h3>Where should we send it?</h3>
+              <label for="customer-name">Your name</label>
+              <input id="customer-name" name="name" type="text" placeholder="e.g. Ayesha Khan" autocomplete="name" required />
+              <label for="customer-phone">Phone number</label>
+              <div class="phone-field">
+                <span class="phone-prefix" aria-hidden="true">+91</span>
+                <input id="customer-phone" name="phone" type="tel" inputmode="numeric" placeholder="10-digit mobile number" autocomplete="tel-national" pattern="[0-9]{10}" minlength="10" maxlength="10" title="Enter exactly 10 digits" aria-label="10-digit mobile number" required />
+              </div>
+              <label for="customer-address">Delivery address</label>
+              <textarea id="customer-address" name="address" rows="2" placeholder="House, street and city" autocomplete="street-address" required></textarea>
+              <label for="customer-pincode">Pincode</label>
+              <input id="customer-pincode" name="pincode" type="text" inputmode="numeric" placeholder="6-digit pincode" autocomplete="postal-code" pattern="[0-9]{6}" minlength="6" maxlength="6" title="Enter a 6-digit pincode" required />
+              <label for="customer-note">Order note <span>(optional)</span></label>
+              <input id="customer-note" name="note" type="text" placeholder="Anything we should know?" />
+              <p class="form-message" id="form-message" role="alert"></p>
+              <button class="button button-order" type="submit"><span>Send order on WhatsApp</span><span aria-hidden="true">↗</span></button>
+              <p class="secure-note"><span aria-hidden="true">●</span> Your order is confirmed with us directly.</p>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="promise-section" id="about">
+        <div><p class="eyebrow"><span></span> THE DESI GHEE HARYANA PROMISE</p><h2>Good staples.<br /><em>No fuss.</em></h2></div>
+        <p>From everyday cooking to the family dawat, we keep the pantry essentials simple: carefully packed, clearly priced, and easy to order.</p>
+        <a href="#shop" class="text-link">Find your favourites <span aria-hidden="true">→</span></a>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="contact-copy">
+          <p class="eyebrow"><span></span> WE'D LOVE TO HEAR FROM YOU</p>
+          <h2 id="contact-heading">Contact <em>us.</em></h2>
+          <div class="contact-details">
+            <div class="contact-detail"><span>PHONE</span><a href="tel:+919467334002">+91 94673 34002</a></div>
+            <div class="contact-detail"><span>EMAIL</span><a href="mailto:sandeepyadav334002@gmail.com">sandeepyadav334002@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="social-block">
+          <p class="eyebrow"><span></span> FOLLOW THE SHOP</p>
+          <div class="social-links" aria-label="Social media">
+            <a class="social-link is-disabled" data-social="instagram" aria-label="Instagram profile link coming soon" aria-disabled="true" tabindex="-1" title="Instagram link coming soon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="icon-fill" cx="17.7" cy="6.5" r="1"/></svg>
+            </a>
+            <a class="social-link is-disabled" data-social="facebook" aria-label="Facebook page link coming soon" aria-disabled="true" tabindex="-1" title="Facebook link coming soon">
+              <svg class="facebook-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.6 1.6-1.6h1.7V3.5c-.3 0-1.2-.1-2.3-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H8.4V13h2.7v8z"/></svg>
+            </a>
+            <a class="social-link is-disabled" data-social="youtube" aria-label="YouTube channel link coming soon" aria-disabled="true" tabindex="-1" title="YouTube link coming soon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 7.2a2.8 2.8 0 0 0-2-2C17.2 4.7 12 4.7 12 4.7s-5.2 0-7 .5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.5 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7 .5 7 .5s5.2 0 7-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"/><path class="icon-cutout" d="m10 15.5 5-3.5-5-3.5z"/></svg>
+            </a>
+          </div>
+          <p class="social-note">Instagram is live. Facebook and YouTube links will be added when those profiles are shared.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand brand-footer" href="#top"><img class="brand-mark" src="main_logo.jpeg" alt="" /><span>Desi Ghee Haryana<small>PURE PANTRY GOODS</small></span></a><span>Made for your everyday table.</span><a href="#top">Back to top ↑</a></footer>
+  </body>
+</html>
