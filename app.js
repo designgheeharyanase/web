@@ -16,11 +16,11 @@ const products = [
   { id: "buffalo-5", category: "buffalo", name: "Buffalo Ghee", size: "5 kg", price: 12500, image: "buffalo-5" },
   { id: "buffalo-10", category: "buffalo", name: "Buffalo Ghee", size: "10 kg", price: 25000, image: "buffalo-10" },
   { id: "buffalo-20", category: "buffalo", name: "Buffalo Ghee", size: "20 kg", price: 50000, image: "buffalo-20" },
-  { id: "atta-10", category: "atta", name: "Whole Wheat Flour (Atta)", size: "10 kg", price: 2000, image: "atta-10" },
-  { id: "atta-20", category: "atta", name: "Whole Wheat Flour (Atta)", size: "20 kg", price: 4000, image: "atta-20" },
-  { id: "atta-50", category: "atta", name: "Whole Wheat Flour (Atta)", size: "50 kg", price: 10000, image: "atta-50" },
-  { id: "atta-100", category: "atta", name: "Whole Wheat Flour (Atta)", size: "100 kg", price: 20000, image: "atta-100" },
-  { id: "atta-500", category: "atta", name: "Whole Wheat Flour (Atta)", size: "500 kg", price: 100000, image: "atta-500" },
+  { id: "atta-10", category: "atta", name: "Whole Wheat Flour (Atta)", size: "10 kg", price: 1000, image: "atta-10" },
+  { id: "atta-20", category: "atta", name: "Whole Wheat Flour (Atta)", size: "20 kg", price: 2000, image: "atta-20" },
+  { id: "atta-50", category: "atta", name: "Whole Wheat Flour (Atta)", size: "50 kg", price: 5000, image: "atta-50" },
+  { id: "atta-100", category: "atta", name: "Whole Wheat Flour (Atta)", size: "100 kg", price: 10000, image: "atta-100" },
+  { id: "atta-500", category: "atta", name: "Whole Wheat Flour (Atta)", size: "500 kg", price: 50000, image: "atta-500" },
 ];
 
 const DELIVERY_THRESHOLD = 10000;
