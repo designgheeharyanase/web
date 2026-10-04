@@ -1,4 +1,4 @@
-const SHOP_WHATSAPP_NUMBER = "919467334002";
+const SHOP_WHATSAPP_NUMBER = "919711946733";
 const SOCIAL_PROFILES = {
   instagram: "https://www.instagram.com/buffalocowghee?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==",
   facebook: "",
