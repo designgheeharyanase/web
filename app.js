@@ -178,7 +178,7 @@ document.querySelector("#checkout-form").addEventListener("submit", (event) => {
 
   const whatsappNumber = SHOP_WHATSAPP_NUMBER.replace(/\D/g, "");
   if (!whatsappNumber) {
-    formMessage.textContent = "WhatsApp number abhi set nahi hai. app.js mein SHOP_WHATSAPP_NUMBER add karein.";
+    formMessage.textContent = "WhatsApp number is not set as of now. kindly add whatsapp number in app.js SHOP_WHATSAPP_NUMBER .";
     return;
   }
 
