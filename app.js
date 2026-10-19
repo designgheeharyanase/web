@@ -21,6 +21,9 @@ const products = [
   { id: "atta-50", category: "atta", name: "Whole Wheat Flour (Atta)", size: "50 kg", price: 5000, image: "atta-50" },
   { id: "atta-100", category: "atta", name: "Whole Wheat Flour (Atta)", size: "100 kg", price: 10000, image: "atta-100" },
   { id: "atta-500", category: "atta", name: "Whole Wheat Flour (Atta)", size: "500 kg", price: 50000, image: "atta-500" },
+  { id: "oil-1l", category: "oil", name: "Mustard Oil", size: "1 litre", price: 300, image: "oil" },
+  { id: "millet-5", category: "millet", name: "Bajra Atta (Millet Flour)", size: "5 kg", price: 1000, image: "millet" },
+  { id: "pickle-1", category: "pickle", name: "Green Chilli Pickle (Hari Mirch Achar)", size: "1 kg", price: 500, image: "pickle" },
 ];
 
 const DELIVERY_THRESHOLD = 10000;
@@ -72,7 +75,7 @@ function renderProducts(category = "all") {
   productGrid.innerHTML = visibleProducts.map((product) => `
     <article class="product-card">
       <div class="product-image ${product.image}" role="img" aria-label="${product.name}">
-        <span class="product-tag">${product.category === "atta" ? "Daily staple" : "Pure & rich"}</span>
+        <span class="product-tag">${product.category === "atta" || product.category === "millet" ? "Daily staple" : product.category === "pickle" ? "Traditional pickle" : product.category === "oil" ? "Pantry staple" : "Pure & rich"}</span>
       </div>
       <div class="product-info">
         <h3>${product.name}</h3>
