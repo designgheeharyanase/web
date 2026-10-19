@@ -47,7 +47,7 @@ document.querySelectorAll("[data-social]").forEach((link) => {
   link.href = profileUrl;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
-  link.setAttribute("aria-label", `Open Desi Ghee Haryana on ${platform}`);
+  link.setAttribute("aria-label", `Open Fauji Farms on ${platform}`);
   link.removeAttribute("aria-disabled");
   link.removeAttribute("tabindex");
   link.removeAttribute("title");
@@ -195,7 +195,7 @@ document.querySelector("#checkout-form").addEventListener("submit", (event) => {
   }, 0);
   const delivery = getDeliveryDetails(subtotal);
   const message = [
-    "Hello Desi Ghee Haryana, I'd like to place an order:",
+    "Hello Fauji Farms, I'd like to place an order:",
     "",
     ...orderLines,
     "",
