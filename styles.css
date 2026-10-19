@@ -76,6 +76,9 @@ h1 em, h2 em { color: #d5bd8a; font-weight: 600; }
 .product-image.atta-50 { background-color: #eee8d9; background-image: url("atta50kg.jpeg"); }
 .product-image.atta-100 { background-color: #eee8d9; background-image: url("atta100kg.jpeg"); }
 .product-image.atta-500 { background-color: #eee8d9; background-image: url("atta500kg.jpeg"); }
+.product-image.oil { background-image: url("mustard oil.jpeg"); }
+.product-image.millet { background-color: #eee8d9; background-image: url("millet comes.jpeg"); }
+.product-image.pickle { background-image: url("pickle.jpeg"); }
 .product-tag { position: absolute; z-index: 1; top: 10px; left: 10px; padding: 6px 8px; background: rgba(255,254,250,.94); color: var(--forest); font-size: 8px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .product-info { padding: 12px 12px 13px; }
 .product-info h3 { margin: 0 0 4px; font-family: var(--serif); font-size: 15px; font-weight: 600; }
